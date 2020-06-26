@@ -40,3 +40,13 @@ x
 
 Spec Files:      2 passed, 2 total (100% completed) in 00:00:06
 ```
+
+# Comments on commits
+* Commit [55cb725](https://github.com/gin/demo-webdriverio/blob/55cb725e2f7b3579dc7e7666fdf3ce5ef5c98ad3/test/specs/login.spec.js)  
+This login page test shows the most basic test without using page objects
+
+Let's follow the test evolution
+
+# Comment on dependencies
+Chrome is expected to be installed, so that Webdriver can use it for testing.  
+Puppeteer (headless version Chrome) can be used as fallback if running in a container or VM where Chrome is not installed. It is not yet setup in this demo.
