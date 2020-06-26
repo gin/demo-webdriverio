@@ -1,0 +1,24 @@
+{
+  "name": "demo-webdriverio",
+  "version": "0.0.1",
+  "description": "Demo of how I used webdriverio for Aaron",
+  "scripts": {
+    "test": "wdio run wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gin/demo-webdriverio.git"
+  },
+  "keywords": [
+    "webdriverio"
+  ],
+  "author": "Luigi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gin/demo-webdriverio/issues"
+  },
+  "homepage": "https://github.com/gin/demo-webdriverio#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.1.22"
+  }
+}
