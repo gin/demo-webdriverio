@@ -45,7 +45,14 @@ Spec Files:      2 passed, 2 total (100% completed) in 00:00:06
 * Commit [55cb725](https://github.com/gin/demo-webdriverio/blob/55cb725e2f7b3579dc7e7666fdf3ce5ef5c98ad3/test/specs/login.spec.js)  
 This login page test shows the most basic test without using page objects
 
-Let's follow the test evolution
+Let's follow the evolution of the test file
+
+* Commit [0770b0c](https://github.com/gin/demo-webdriverio/commit/0770b0c4553dfa29ce676efeeee6429c5341c98b)  
+This login page test shows what changed when using page objects. This was the page object setup one of my projects at Ambry (around 2015) used before TypeScript was commonplace.
+
+Let's see how it looks after the tests and the page objects are converted to TypeScript (I'll do it tonight!)
+
+* Commit [TBD] (I'll do it tonight!)
 
 # Comment on dependencies
 Chrome is expected to be installed, so that Webdriver can use it for testing.  
