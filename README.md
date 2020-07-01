@@ -50,9 +50,16 @@ Let's follow the evolution of the test file
 * Commit [0770b0c](https://github.com/gin/demo-webdriverio/commit/0770b0c4553dfa29ce676efeeee6429c5341c98b)  
 This login page test shows what changed when using page objects. This was the page object setup one of my projects at Ambry (around 2015) used before TypeScript was commonplace.
 
-Let's see how it looks after the tests and the page objects are converted to TypeScript (I'll do it tonight!)
+Let's see how it looks after the tests and the page objects are converted to TypeScript
 
-* Commit [TBD] (I'll do it tonight!)
+* Commit [71a04d2](https://github.com/gin/demo-webdriverio/commit/71a04d24e9c9e4fbde3263552237ba9837eca998)  
+When using TypeScript, one way is to have the TypeScript compiler process `*.ts`
+files and output them as `*.js` files to a directory where the Node.js runtime
+could run it. Another way is to use ts-node (a wrapper on Node.js to run `*.ts`
+files). This commit shows configuration changes using first method. The
+advantage with this method is that it reduces a dependency (No need to depend
+on ts-node). The disadvantage is the project directory will have `*.js` files
+after compiling with `tsc` (TypeScript's compiler).
 
 # Comment on dependencies
 Chrome is expected to be installed, so that Webdriver can use it for testing.  
