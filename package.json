@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Demo of how I used webdriverio for Aaron",
   "scripts": {
-    "test": "tsc && wdio run wdio.conf.js"
+    "test": "tsc && wdio run wdio.conf.js",
+    "clean": "rm -rf src"
   },
   "repository": {
     "type": "git",
