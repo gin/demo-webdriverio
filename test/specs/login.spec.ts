@@ -1,4 +1,4 @@
-const login = require('../page-objects/login.page.js');
+import login from '../page-objects/login.page';
 
 describe('the-internet.herokuapp.com login form', () => {
     it('should deny access with wrong creds', () => {
