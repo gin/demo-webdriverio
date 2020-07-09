@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "outDir": "src/",
     "removeComments": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+        "*": [ "./*" ]
+    },
     "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "@types/mocha"]
   },
   "include": [

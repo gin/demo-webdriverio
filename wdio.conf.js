@@ -1,7 +1,7 @@
 exports.config = {
     runner: 'local',
     specs: [
-        './src/specs/*.js'
+        './test/specs/*.ts'
     ],
     exclude: [
     ],
@@ -15,7 +15,7 @@ exports.config = {
             },
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'warn',
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
@@ -29,8 +29,12 @@ exports.config = {
     mochaOpts: {
         // TypeScript setup
         require: ['ts-node/register'],
+        // Optional
+        //require: ['tsconfig-paths/register'],
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        // Optional
+        //compilers: ['tsconfig-paths/register'],
     },
     /**
      * Gets executed once before all workers get launched.
@@ -67,6 +71,16 @@ exports.config = {
      */
     // before: function (capabilities, specs) {
     // },
+    before: function() {
+        // This is required
+        // Alternatively, put the `require:` line in `mochaOpts`:
+        // e.g.
+        //mochaOpts: {
+        //    // TypeScript setup
+        //    require: ['ts-node/register'],
+
+        //require('ts-node').register({ files: true });
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
