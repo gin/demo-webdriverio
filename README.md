@@ -61,6 +61,11 @@ advantage with this method is that it reduces a dependency (No need to depend
 on ts-node). The disadvantage is the project directory will have `*.js` files
 after compiling with `tsc` (TypeScript's compiler).
 
+Let's see which settings to change to use TypeScript without having to see the `*.js` output
+
+* Commit [4111e50](https://github.com/gin/demo-webdriverio/commit/4111e50b45a955fde9b02f1c5a844a0cec6b9db3)  
+Directory is cleaner. However, the project now depends on `ts-node`. This is ok in most cases.
+
 # Comment on dependencies
 Chrome is expected to be installed, so that Webdriver can use it for testing.  
 Puppeteer (headless version Chrome) can be used as fallback if running in a container or VM where Chrome is not installed. It is not yet setup in this demo.
