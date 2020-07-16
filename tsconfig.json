@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2020",
     "module": "commonjs",
     "removeComments": true,
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-        "*": [ "./*" ]
+        "*": [ "*" ]
     },
     "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "@types/mocha"]
   },
   "include": [
-    "./test/**/*"
+    "test/**/*"
   ],
   "exclude": [
-    "./node_modules"
+    "node_modules"
   ]
 }
